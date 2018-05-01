@@ -1,6 +1,8 @@
 # Weight-dynamics-in-Convolutional-Neural-Network
 
-In this study we visualize in which order the weights in a convolutional neural network CNN, composed by three convolutional layers, converge to their final values. 
+In this study we visualize in which order the weights in a convolutional neural network CNN converge to their final values. 
+
+The model used for this experiment is composed by three convolutional layers alternated by two max pooling. A flatten layer used to transform the 3D tensor in a 1D output. The vector obtained will fit the densely-connected classifier network composed by a stack of dense layers.
 
 We use a CNN that can classify MNIST digits with an accuracy of 0.9976. Each layer consist of a convolution of the previous layer output (or, in the case of the 1st layer, the input image) with a set of learned weights; passing the response through a rectified linear function (relu(x) = max(x, 0)), max pooling over local neighborhoods. Figure 1. Shows the model used in the experiment. 
 
